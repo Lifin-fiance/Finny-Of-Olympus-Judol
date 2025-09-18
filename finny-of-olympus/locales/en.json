@@ -1,0 +1,364 @@
+{
+  "lang": "en",
+  "nav_game": "Game",
+  "nav_learning": "Learning",
+  "nav_quiz": "Quiz",
+  "nav_about": "About",
+  "nav_privacy": "Privacy Policy",
+  "nav_tos": "Terms of Service",
+  "header_title": "Finny of Olympus",
+  "header_subtitle": "An Educational Slot Experience",
+  "entry_button": "Are You Sure You Want to Enter?",
+  "spin_button_text": "SPIN",
+  "spin_button_cost": "COST",
+  "insufficient_credits": "INSUFFICIENT CREDITS",
+  "cash_out_button": "CASH OUT",
+  "credits_label": "Credits",
+  "spins_label": "Spins",
+  "wins_label": "Wins",
+  "losses_label": "Losses",
+  "win_odds_label": "Current Win Odds",
+  "how_it_works_label": "How It Works",
+  "educational_message_default": "This game demonstrates how slot machines can be designed to manipulate players. Pay attention to how the odds and your feelings change as you play.",
+  "payouts_label": "Symbol Payouts",
+  "house_earnings_label": "House Earnings",
+  "footer_warning_title": "Gambling Warning",
+  "footer_warning_text": "Gambling can lead to addiction and financial ruin. If you or someone you know has a gambling problem, please seek help. Contact professionals or a local support group.",
+  "win_message_generic": "YOU WON",
+  "win_message_loss": "WIN: {prize} (BUT YOU LOST CREDITS)",
+  "lose_message": "SO CLOSE!",
+  "loss_disguised_as_win": "Loss Disguised as Win",
+  "phase1_explanation": "<strong>Phase 1: The Hook.</strong> Odds are high to make you feel like winning is easy.",
+  "phase2_explanation": "<strong>Phase 2: Transition.</strong> The odds have dropped significantly.",
+  "phase3_explanation": "<strong>Phase 3: House Advantage.</strong> Odds are low, reflecting how real slots work.",
+  "phase2_modal_title": "Phase 2: Odds are Changing",
+  "phase2_modal_body": "Win probability dropped from <strong>90% to 50%</strong>. Real games do this to make you chase your 'luck'.",
+  "phase3_modal_title": "Phase 3: The House Advantage",
+  "phase3_modal_body": "Win odds have plummeted to <strong>20%</strong>. This is the realistic phase where the house has a massive mathematical edge.",
+  "cashout_modal_title": "Session Results",
+  "cashout_summary": "You started with <strong>{start}</strong> credits and ended with <strong>{end}</strong>. Overall, you {result} credits.",
+  "cashout_profit": "profited <span class='text-green-400'>{change}</span>",
+  "cashout_loss": "lost <span class='text-red-400'>{change}</span>",
+  "cashout_chart_explainer": "This chart shows your credit balance after each spin. Notice how even with wins, the overall trend can be downward.",
+  "play_again_button": "Play Again",
+  "reality_check_title": "Reality Check",
+  "reality_check_body": "You have been playing for <strong>{minutes} minute{s}</strong>. You have {result} credits.",
+  "reality_check_continue_button": "Continue Playing",
+  "dynamic_chasing_losses": "Feeling the urge to win back what you've lost? This is called 'chasing losses' and it's a common trap.",
+  "dynamic_winning_streak": "You're on a winning streak! It's easy to feel invincible, but remember each spin is random.",
+  "quiz_title": "Knowledge Quiz",
+  "quiz_choose_category": "Choose a Category",
+  "quiz_question_progress": "Question {current} of {total}",
+  "quiz_complete": "Quiz Complete!",
+  "quiz_results_title": "Quiz Results",
+  "quiz_results_summary": "You scored {score} out of {total}.",
+  "quiz_results_encouragement": "Knowledge is your best defense. The more you understand the math and psychology behind these games, the safer you'll be.",
+  "quiz_try_another": "Try Another Quiz",
+  "correct_answer_text": "Correct!",
+  "incorrect_answer_text": "Not Quite.",
+  "next_question_button": "Next Question →",
+  "show_results_button": "Show Results",
+  "about_title": "About This Project",
+  "about_mission_title": "Our Mission",
+  "about_mission_text": "This game was created as an educational tool to pull back the curtain on how slot machines work. By simulating a slot experience and openly revealing how odds can be manipulated, we hope to empower players with knowledge and highlight the risks of gambling.",
+  "about_creator_title": "About the Creator",
+  "about_creator_text": "With a passion for leveraging technology for education, LIFIN Team developed this game to make learning about gambling risks interactive and impactful. This project reflects a commitment to creating tools that foster awareness and critical thinking.",
+  "about_help_title": "Get Help",
+  "about_help_text": "Gambling can be addictive. If you or someone you know is struggling, please don't hesitate to seek help. There are many free and confidential resources available to provide support.",
+  "about_help_link": "Get Help →",
+  "learning_center_title": "Learning Center",
+  "back_to_game_button": "Back to Game",
+  "privacy_policy_title": "Privacy Policy",
+  "last_updated": "Last Updated",
+  "privacy_intro": "This Privacy Policy explains our policies and procedures on the collection, use, and disclosure of your information when you use our Service.",
+  "privacy_data_we_collect": "Data We Collect",
+  "privacy_data_we_collect_p1": "This website is an educational tool and does not require you to create an account or provide any personal information like your name or email address. We do not have a server database to store user data.",
+  "privacy_data_we_collect_li1": "<strong>Local Storage:</strong> To improve your experience, we use your browser's `localStorage` to save your preferred language setting (e.g., 'en' for English or 'id' for Indonesian). This data is stored only on your own device and is not transmitted to us.",
+  "privacy_third_party": "Third-Party Services",
+  "privacy_third_party_li1": "<strong>Google Fonts:</strong> This site uses the Google Fonts service to display custom typography. When you visit our site, your browser may send requests to Google's servers to fetch these font files. Google may collect information as described in its own privacy policy.",
+  "privacy_third_party_li2": "<strong>Tailwind CSS (CDN):</strong> We use a Content Delivery Network (CDN) to load the Tailwind CSS framework for styling. Your browser may make requests to the CDN provider's servers, which could be logged.",
+  "privacy_changes": "Changes to this Policy",
+  "privacy_changes_p1": "We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.",
+  "tos_title": "Terms of Service",
+  "tos_intro": "Please read these terms of service carefully before using Our Service. By accessing or using the Service, you agree to be bound by these Terms. If you disagree with any part of the terms, then you may not access the Service.",
+  "tos_purpose_title": "Educational Purpose",
+  "tos_purpose_p1": "This website and the game \"Finny of Olympus\" are provided for educational and awareness purposes only. The game simulates a slot machine to demonstrate mechanical and psychological principles related to gambling.",
+  "tos_purpose_p2": "No real money is involved, and there is no opportunity to win real money or prizes. The \"credits\" used in the game have no monetary value and are for simulation purposes only. This service is not a gambling platform.",
+  "tos_ip_title": "Intellectual Property",
+  "tos_ip_p1": "The Service and its original content, features, and functionality are and will remain the exclusive property of the creator, LIFIN TEAM. The Service is protected by copyright and other intellectual property laws. Our content may not be used in connection with any product or service without the prior written consent of the creator.",
+  "tos_liability_title": "Limitation of Liability",
+  "tos_liability_p1": "This Service is provided \"as is\" and \"as available\" for your use, without warranties of any kind. In no event shall the creator be liable for any direct, indirect, incidental, or consequential damages arising out of the use or inability to use the Service. The creator does not assume any responsibility for any decisions or actions you take based on the information or simulation provided by this Service.",
+  "lc_part1_title": "Part I: The Architecture of Addiction",
+  "lc_part1_subtitle1": "The Global Casino at Your Fingertips",
+  "lc_part1_p1": "Online gambling, or Judi Online, is defined as any form of wagering on games of chance or skill conducted over the internet, including virtual slots, poker, and sports betting<sup> [1] </sup>. This is critically different from \"online gaming,\" where financial risk and wagering are not inherent components of play. The risks are magnified compared to traditional casinos due to 24/7 accessibility, anonymity which lowers inhibitions, and a huge variety of immersive games.",
+  "lc_part1_p2": "Platforms targeting Indonesia often operate from offshore hubs in Southeast Asia—primarily Cambodia, the Philippines, Myanmar, and Laos—making them hard for Indonesian law enforcement<sup> [2] </sup>. They use sophisticated evasion strategies, such as constantly registering new domain names and encouraging the use of VPNs to bypass government blocks.",
+  "lc_part1_subtitle2": "Engineering Compulsion: The Psychological Toolkit",
+  "lc_part1_p3": "The addictive power of online slots is not accidental; it is the result of meticulous psychological engineering designed to exploit cognitive biases and manipulate the brain's reward system.<sup> [3] </sup>",
+  "lc_part1_li1_title": "Variable Ratio Reinforcement:",
+  "lc_part1_li1_text": "Rewards are delivered after an unpredictable number of responses (spins). This is the most powerful form of reinforcement for creating high, steady rates of behavior that are extremely resistant to extinction. The brain's reward system releases dopamine in anticipation of a potential reward, making the act of spinning itself inherently rewarding and neurologically similar to the effect of addictive substances.",
+  "lc_part1_li2_title": "The Near-Miss Effect:",
+  "lc_part1_li2_text": "An outcome that is structurally close to a major win (e.g., two jackpot symbols aligning with the third just missing) activates the same reward-related brain circuitry in a problem gambler as an actual win. Machines are often programmed to produce a higher-than-random frequency of near-misses to encourage continued play.",
+  "lc_part1_li3_title": "The Illusion of Control:",
+  "lc_part1_li3_text": "Features like a \"stop\" button or choosing a betting pattern foster an erroneous belief that a player can exert skill over an outcome that is purely random. This distortion is a cornerstone of gambling addiction.",
+  "lc_part1_li4_title": "Losses Disguised as Wins (LDWs):",
+  "lc_part1_li4_text": "This is an insidious feature where a spin results in a payout that is less than the total amount wagered (e.g., betting Rp 10,000 and \"winning\" Rp 6,000). The machine celebrates the outcome with the same flashing lights and sounds as a genuine profit, masking the financial loss and reinforcing the behavior.",
+  "lc_part1_li5_title": "Chasing Losses:",
+  "lc_part1_li5_text": "This is the powerful, irrational compulsion to continue gambling to win back money that has already been lost, trapping players in a deepening cycle of financial devastation.",
+  "lc_part2_title": "Part II: The Indonesian Crisis",
+  "lc_part2_subtitle1": "A Nation Under Siege: The Statistical Reality",
+  "lc_part2_p1": "Official data reveals a national crisis. The number of active online gamblers in Indonesia is estimated to be in the millions, with some government sources suggesting it could be as high as 8.8 million people. The most alarming trend is the youth epidemic: approximately 80,000 players are under the age of 10, and over 440,000 are between 11 and 20. An estimated 80% of all players come from lower-middle-income communities, making them particularly vulnerable to the \"get rich quick\" fantasy peddled by these platforms.<sup> [4] </sup>",
+  "lc_part2_subtitle2": "The Economic Scale",
+  "lc_part2_p2": "The financial scale is staggering. Transaction values exploded to <strong>Rp 327 trillion</strong> in 2023, a massive increase from Rp 57 trillion in 2021. In the first quarter of 2024 alone, transactions exceeded Rp 100 trillion. This money is siphoned out of the local economy, representing a non-productive capital flight that weakens the nation's GDP and the Rupiah.",
+  "lc_part2_subtitle3": "Socio-Economic Devastation",
+  "lc_part2_p3": "The consequences ripple through society. Addiction leads to a debt spiral, often involving predatory online loans (pinjol), which has become a primary driver of \"new poverty.\" This financial pressure is a direct cause of family disintegration, leading to a documented surge in divorce rates across the country. Furthermore, gambling addiction is a recognized mental health disorder, strongly correlated with severe issues like depression, anxiety, and suicidal thoughts.",
+  "lc_part3_title": "Part III: A Path Forward",
+  "lc_part3_subtitle1": "Legal Consequences in Indonesia",
+  "lc_part3_p1": "Indonesian law imposes severe penalties for online gambling. Under the UU ITE (Law No. 1 of 2024), anyone who distributes, transmits, or makes gambling content accessible faces a maximum prison sentence of <strong>6 years</strong> and/or a fine of up to <strong>Rp 1 billion</strong>. The KUHP (Criminal Code) also has strict penalties for both organizers and players.<sup> [5] </sup>",
+  "lc_part3_subtitle2": "Recognizing the Signs of Addiction",
+  "lc_part3_p2": "Key warning signs include a preoccupation with gambling, needing to bet more money for the same excitement (tolerance), lying to conceal involvement, and \"chasing\" losses.",
+  "lc_part3_subtitle3": "A Guide to Getting Help in Indonesia",
+  "lc_part3_p3": "Help is available and accessible. In a landmark policy decision, the Indonesian government has confirmed that rehabilitation for gambling addiction is covered by the national health insurance, <strong>BPJS Kesehatan</strong>, correctly framing it as a treatable health condition.",
+  "lc_table_header_org": "Organization/Service",
+  "lc_table_header_support": "Type of Support",
+  "lc_table_header_access": "How to Access",
+  "lc_table_row1_org": "Ministry of Health (Kemenkes) Hotline",
+  "lc_table_row1_support": "Information & Referral",
+  "lc_table_row1_access": "Phone: 1500-567",
+  "lc_table_row2_org": "PKJN RS Marzoeki Mahdi (Bogor)",
+  "lc_table_row2_support": "Specialized Medical Treatment",
+  "lc_table_row2_access": "Via Kemenkes or hospital",
+  "lc_table_row3_org": "Govt. WhatsApp Hotline",
+  "lc_table_row3_support": "Direct Chat Support & Info",
+  "lc_table_row3_access": "s.id/bersamastopjudol",
+  "lc_table_row4_org": "Tele-Psychiatry Platforms",
+  "lc_table_row4_support": "Private Consultation",
+  "lc_table_row4_access": "Via mobile app (Halodoc, etc.)",
+  "lc_table_row5_org": "Gamblers Anonymous",
+  "lc_table_row5_support": "Peer Support Group",
+  "lc_table_row5_access": "gamblersanonymous.org",
+  "lc_references_title": "References",
+  "quiz_categories": {
+    "digital_casino": "The Digital Casino 🎰",
+    "brain_siege": "Brain Under Siege 🧠",
+    "national_crisis": "The National Crisis 🇮🇩",
+    "path_recovery": "The Path to Recovery 🙏"
+  },
+  "quiz_data_digital_casino": [
+    {
+      "question": "What is the crucial difference that turns a harmless \"online game\" into risky \"iGaming\"?",
+      "options": ["Better graphics and sound", "The requirement of a financial wager", "The number of players involved", "The use of a smartphone"],
+      "correctAnswer": "The requirement of a financial wager",
+      "explanation": "The key distinction is the introduction of a financial wager. This transforms the activity from simple entertainment into a high-stakes game with significant psychological and economic risks."
+    },
+    {
+      "question": "Online gambling platforms are available 24/7 in your pocket. This constant availability is a major risk because it...",
+      "options": ["Drains your phone's battery quickly", "Uses up a lot of internet data", "Removes natural barriers, encouraging more frequent and intense gambling", "Is not as social as a real casino"],
+      "correctAnswer": "Removes natural barriers, encouraging more frequent and intense gambling",
+      "explanation": "Unlike a physical casino that requires travel and operates on set hours, online platforms are always accessible. This frictionless availability encourages longer and more intense gambling, increasing the risk of addiction."
+    },
+    {
+      "question": "What is the \"disinhibition effect\" that happens when people gamble online?",
+      "options": ["Players feel more confident about their skills", "Anonymity makes players take bigger risks than they would in public", "The games are designed to be less difficult", "Players get distracted by social media notifications"],
+      "correctAnswer": "Anonymity makes players take bigger risks than they would in public",
+      "explanation": "The virtual environment provides a \"cloak of anonymity,\" which can lower a person's inhibitions. This psychological phenomenon, known as disinhibition, leads individuals to take greater financial risks and gamble for longer periods."
+    },
+    {
+      "question": "🕵️‍♂️ You're an investigator tracking the source of illegal gambling sites in Indonesia. Where would you most likely find their physical headquarters?",
+      "options": ["In high-tech offices in Jakarta", "In offshore hubs like Cambodia, the Philippines, or Myanmar", "Scattered across various homes in Indonesia", "They don't have a physical location; they are all in the cloud"],
+      "correctAnswer": "In offshore hubs like Cambodia, the Philippines, or Myanmar",
+      "explanation": "The majority of these gambling sites are run from offshore hubs in other Southeast Asian nations where gambling regulations are weaker. This creates huge jurisdictional challenges for Indonesian law enforcement."
+    },
+    {
+      "question": "The government blocks a gambling website. How do operators immediately get around this?",
+      "options": ["They file an official complaint with the government", "They stop operating in Indonesia", "They use VPNs and constantly register new domain names", "They offer discounts to government officials"],
+      "correctAnswer": "They use VPNs and constantly register new domain names",
+      "explanation": "Operators engage in a \"cat-and-mouse\" game with authorities by using evasion strategies like registering new domains, using foreign IPs, and encouraging players to use VPNs to bypass government firewalls."
+    },
+    {
+      "question": "Online gambling platforms are often the public-facing \"retail arm\" of a much larger, more dangerous operation. What are they connected to?",
+      "options": ["Legitimate software development companies", "International hotel and casino chains", "Sophisticated transnational organized crime syndicates", "Charitable organizations raising funds"],
+      "correctAnswer": "Sophisticated transnational organized crime syndicates",
+      "explanation": "These platforms are frequently linked to transnational criminal networks involved in other illicit activities like human trafficking, money laundering, and drug trafficking. The money gambled funds this entire criminal ecosystem."
+    },
+    {
+      "question": "What new technology has the Indonesian government (Kominfo) recently started using to improve its ability to block gambling sites?",
+      "options": ["Blockchain", "Quantum Computing", "Artificial Intelligence (AI)", "Advanced satellite imagery"],
+      "correctAnswer": "Artificial Intelligence (AI)",
+      "explanation": "Recognizing that manual blocking is not enough, the government has begun employing artificial intelligence (AI) to enhance the detection and blocking of the massive number of gambling-related websites and content."
+    }
+  ],
+  "quiz_data_brain_siege": [
+    {
+      "question": "What is the core psychological principle that makes slot machines so powerfully addictive?",
+      "options": ["The colorful graphics and exciting sounds", "A Variable Ratio Reinforcement Schedule", "The Illusion of Control", "The low cost per spin"],
+      "correctAnswer": "A Variable Ratio Reinforcement Schedule",
+      "explanation": "The primary engine of addiction is Variable Ratio Reinforcement, where rewards are given after an unpredictable number of spins. This creates a high, steady rate of behavior that is extremely difficult to stop."
+    },
+    {
+      "question": "When you're playing a slot game, your brain releases the pleasure chemical \"dopamine.\" When does this happen?",
+      "options": ["Only when you win a large jackpot", "In anticipation of a potential reward, even if you lose", "Only after you have been playing for more than an hour", "When you see an advertisement for the game"],
+      "correctAnswer": "In anticipation of a potential reward, even if you lose",
+      "explanation": "The brain's reward system releases dopamine in anticipation of a win, not just upon receiving one. This means the act of spinning itself becomes rewarding and compels you to continue, even during a losing streak."
+    },
+    {
+      "question": "You spin the reels and get two jackpot symbols, with the third one just one spot away! How does a problem gambler's brain react to this \"near-miss\"?",
+      "options": ["It registers it as a simple loss", "It activates the same reward circuitry as an actual win", "It triggers a desire to switch to a different game", "It makes them feel calm and relaxed"],
+      "correctAnswer": "It activates the same reward circuitry as an actual win",
+      "explanation": "For a problem gambler, a near-miss isn't just a loss. Brain imaging studies show it activates the very same reward-related brain areas as a genuine win, creating a frustrating but powerful motivation to keep playing."
+    },
+    {
+      "question": "A player believes they have a \"lucky\" way of tapping the spin button to improve their chances. This is a classic example of...",
+      "options": ["The Near-Miss Effect", "Losses Disguised as Wins", "The Illusion of Control", "Chasing Losses"],
+      "correctAnswer": "The Illusion of Control",
+      "explanation": "The Illusion of Control is a false belief that a player can influence an outcome that is purely random. Game designers encourage this by including \"skill cues\" like letting the player stop the reels or choose when to spin."
+    },
+    {
+      "question": "You bet Rp 10,000 on a spin and \"win\" Rp 7,000 back. The machine celebrates with flashing lights and sounds, even though you lost Rp 3,000. This feature is called...",
+      "options": ["A bonus round", "A \"mini-jackpot\"", "A Loss Disguised as a Win (LDW)", "A partial refund"],
+      "correctAnswer": "A Loss Disguised as a Win (LDW)",
+      "explanation": "This is an insidious feature called a Loss Disguised as a Win. Despite a net loss, the game provides positive feedback, masking the financial damage and reinforcing the act of spinning."
+    },
+    {
+      "question": "Someone keeps gambling to try and win back money they've already lost. This dangerous and irrational behavior is known as...",
+      "options": ["Strategic investing", "Chasing Losses", "The Sunk Cost Fallacy", "Both B and C are correct"],
+      "correctAnswer": "Both B and C are correct",
+      "explanation": "This compulsion is called \"Chasing Losses.\" It is driven by the Sunk Cost Fallacy, where each loss is reframed as an \"investment\" that can only be recouped by playing more, trapping the player in a devastating cycle."
+    },
+    {
+      "question": "When a person becomes completely absorbed in gambling to escape from the stresses and anxieties of real life, they are experiencing a state known as...",
+      "options": ["\"Zen mode\"", "\"Dark Flow\"", "\"The Winning Zone\"", "\"Deep Focus\""],
+      "correctAnswer": "\"Dark Flow\"",
+      "explanation": "This state of total mental absorption in the game is termed \"dark flow.\" It's a powerful driver of addiction, as gambling becomes a dysfunctional coping mechanism to escape from problems like stress, boredom, or depression."
+    }
+  ],
+  "quiz_data_national_crisis": [
+    {
+      "question": "The total value of online gambling transactions in Indonesia reached a staggering amount in 2023. What was that figure?",
+      "options": ["Rp 57 Trillion", "Rp 104 Trillion", "Rp 327 Trillion", "Rp 1,000 Trillion"],
+      "correctAnswer": "Rp 327 Trillion",
+      "explanation": "The total transaction value exploded to a record Rp 327 trillion in 2023 alone. This was a massive increase from Rp 104.4 trillion the year before, showing the crisis's exponential growth."
+    },
+    {
+      "question": "The Rp 327 trillion gambled in 2023 was equivalent to approximately what percentage of Indonesia's entire Gross Domestic Product (GDP)?",
+      "options": ["0.1%", "1.5%", "5%", "10%"],
+      "correctAnswer": "1.5%",
+      "explanation": "The 2023 turnover was macroeconomically significant, equivalent to about 1.5% of Indonesia's GDP and almost 20% of the entire national budget for that year."
+    },
+    {
+      "question": "What is the most alarming demographic trend in Indonesian online gambling?",
+      "options": ["The high number of elderly players", "The deep penetration among children and young adults", "The number of players in rural areas", "The number of female players"],
+      "correctAnswer": "The deep penetration among children and young adults",
+      "explanation": "The most alarming trend is the shocking level of involvement from the youngest segments of the population. Data shows approximately 80,000 players are under 10, and over 440,000 are between 11 and 20."
+    },
+    {
+      "question": "What percentage of online gamblers in Indonesia come from lower-middle income communities?",
+      "options": ["20%", "50%", "65%", "80%"],
+      "correctAnswer": "80%",
+      "explanation": "The crisis disproportionately affects the most economically vulnerable, with an estimated 80% of all players coming from lower-middle income communities."
+    },
+    {
+      "question": "When previously stable households are pushed into poverty because of gambling debts, officials have a specific name for it. What is it called?",
+      "options": ["\"Digital Poverty\"", "\"Gambling-Induced Poverty\"", "\"New Poverty\"", "\"The Debt Spiral\""],
+      "correctAnswer": "\"New Poverty\"",
+      "explanation": "The phenomenon of households being pushed below the poverty line by gambling debts has become a primary driver of what Indonesian officials now term \"new poverty.\""
+    },
+    {
+      "question": "What is a major, documented consequence of gambling addiction on family life in Indonesia?",
+      "options": ["Families taking more vacations", "A surge in divorce rates", "An increase in family-owned businesses", "Better communication between spouses"],
+      "correctAnswer": "A surge in divorce rates",
+      "explanation": "The financial pressure and psychological toll of addiction are a direct cause of family disintegration, leading to a documented surge in divorce rates across the country. For example, one court attributed 60% of its divorce cases to online gambling."
+    },
+    {
+      "question": "How does the massive amount of money spent on online gambling damage Indonesia's national economy?",
+      "options": ["It increases local tax revenue", "It encourages productive investment", "It causes massive, non-productive capital flight out of the country", "It strengthens the value of the Rupiah"],
+      "correctAnswer": "It causes massive, non-productive capital flight out of the country",
+      "explanation": "The money is siphoned out of Indonesian households and funneled to offshore criminal hubs. This is a non-productive capital flight that provides zero tax revenue, reduces household purchasing power, and ultimately weakens the national economy."
+    }
+  ],
+  "quiz_data_path_recovery": [
+    {
+      "question": "Under Indonesia's UU ITE (Law on Information and Electronic Transactions), what is the maximum prison sentence for a person caught playing online gambling?",
+      "options": ["6 months", "1 year", "6 years", "10 years"],
+      "correctAnswer": "10 years",
+      "explanation": "Under Article 45, Paragraph (2) of the UU ITE, any person found guilty of distributing, transmitting, or making gambling content accessible (which includes playing) faces a maximum prison sentence of 10 years and/or a fine of Rp 10 billion."
+    },
+    {
+      "question": "What is the legal principle where a more specific law (like UU ITE) is prioritized over a more general law (like the KUHP) in prosecuting online cases?",
+      "options": ["Lex superior derogat legi inferiori", "Lex posterior derogat legi priori", "Lex specialis derogat legi generali", "Lex rex"],
+      "correctAnswer": "Lex specialis derogat legi generali",
+      "explanation": "In Indonesian legal practice, the principle of lex specialis derogat legi generali is often applied, meaning the more specific UU ITE is typically the primary legal instrument used to prosecute online gambling cases."
+    },
+    {
+      "question": "What is the ruling on gambling (maisir) in Islam, the religion of the majority of Indonesians?",
+      "options": ["It is permitted if for a good cause", "It is discouraged but not forbidden", "It is unequivocally forbidden (haram)", "It is only forbidden during Ramadan"],
+      "correctAnswer": "It is unequivocally forbidden (haram)",
+      "explanation": "For Indonesia's majority Muslim population, all forms of gambling (maisir) are unequivocally forbidden (haram). It is seen as a destructive act that undermines the core principles of Islamic law."
+    },
+    {
+      "question": "Which of the following is a key BEHAVIORAL sign of a gambling addiction?",
+      "options": ["Feeling anxious or irritable when not gambling", "Gambling to escape from problems", "Lying to family members to conceal the extent of gambling", "Accumulating significant debt"],
+      "correctAnswer": "Lying to family members to conceal the extent of gambling",
+      "explanation": "Deception, which involves lying to loved ones or others to hide how much one is gambling, is a classic behavioral warning sign of addiction."
+    },
+    {
+      "question": "Which of the following is a key EMOTIONAL sign of a gambling addiction?",
+      "options": ["Selling personal belongings for cash", "Constantly thinking about the next bet", "Committing theft to get gambling money", "Feeling restless or irritable when trying to stop (withdrawal)"],
+      "correctAnswer": "Feeling restless or irritable when trying to stop (withdrawal)",
+      "explanation": "Feeling restless, irritable, or anxious when attempting to cut down or stop gambling is a psychological sign known as withdrawal."
+    },
+    {
+      "question": "Which of the following is a key FINANCIAL sign of a gambling addiction?",
+      "options": ["Losing interest in other hobbies", "Frequently borrowing money or taking out high-interest online loans (pinjol)", "Making unsuccessful efforts to stop gambling", "Needing to gamble with more money to feel excitement"],
+      "correctAnswer": "Frequently borrowing money or taking out high-interest online loans (pinjol)",
+      "explanation": "Having trouble paying bills, frequently borrowing money, and especially turning to predatory online loans (pinjol) are major financial red flags for a gambling problem."
+    },
+    {
+      "question": "A friend is trapped in a gambling addiction and wants help, but they are worried about the cost. What is a game-changing fact you can tell them about getting professional help in Indonesia?",
+      "options": ["Treatment is free for everyone, no questions asked", "Rehabilitation for gambling addiction is covered by BPJS Kesehatan", "They can get a loan from the government for treatment", "All treatment is done online for free"],
+      "correctAnswer": "Rehabilitation for gambling addiction is covered by BPJS Kesehatan",
+      "explanation": "In a crucial policy decision, the Indonesian government confirmed that rehabilitation for gambling addiction is covered by the national health insurance, BPJS Kesehatan. This makes professional care accessible and affordable."
+    },
+    {
+      "question": "Which government hospital in Bogor has a specialized clinic specifically for treating behavioral addictions like gambling?",
+      "options": ["RS Cipto Mangunkusumo", "RS Marzoeki Mahdi (PKJN)", "RS Pertamina", "RS Siloam"],
+      "correctAnswer": "RS Marzoeki Mahdi (PKJN)",
+      "explanation": "The National Center for Mental Health (PKJN) at RS Marzoeki Mahdi in Bogor has a dedicated Behavioral Addiction Clinic that provides professional, evidence-based treatments."
+    },
+    {
+      "question": "What is the easiest, most direct, text-based way for someone to get information and support from the government?",
+      "options": ["Sending a direct message to the President's Instagram", "Using the \"Hotline Stop Judi Online\" WhatsApp channel", "Emailing the Ministry of Finance", "Posting on the Kominfo Facebook wall"],
+      "correctAnswer": "Using the \"Hotline Stop Judi Online\" WhatsApp channel",
+      "explanation": "The government has launched a low-barrier, text-based WhatsApp hotline for support, accessible via the link: https://s.id/bersamastopjudol."
+    },
+    {
+      "question": "For someone who is hesitant to seek in-person help, what is a good, private first step to consult with a licensed psychologist or psychiatrist?",
+      "options": ["Asking for advice in a social media group", "Using a telehealth service like Halodoc or KlikDokter", "Watching self-help videos online", "Reading a book about addiction"],
+      "correctAnswer": "Using a telehealth service like Halodoc or KlikDokter",
+      "explanation": "Reputable telehealth platforms like Halodoc provide a confidential and accessible way to have an online consultation with a licensed professional, which is a great first step for those hesitant about in-person care."
+    },
+    {
+      "question": "Besides blocking websites (a \"supply-side\" strategy), what is the crucial \"demand-side\" strategy needed to combat online gambling effectively?",
+      "options": ["Banning all smartphones", "Focusing on education, prevention, and rehabilitation", "Increasing the price of internet data", "Shutting down social media"],
+      "correctAnswer": "Focusing on education, prevention, and rehabilitation",
+      "explanation": "A purely technological blocking strategy is not enough. A truly effective response must also be a demand-side strategy focused on educating the public, preventing new addictions, and rehabilitating those already suffering."
+    },
+    {
+      "question": "The first and most critical step for a person to build resilience and start their recovery journey is to...",
+      "options": ["Delete their social media accounts", "Find a new, more exciting hobby", "Acknowledge the problem and admit their behavior is out of control", "Move to a new city"],
+      "correctAnswer": "Acknowledge the problem and admit their behavior is out of control",
+      "explanation": "The first and most critical step is for the individual to acknowledge they have a problem and admit that their gambling behavior is out of their control. Without this step, recovery cannot begin."
+    },
+    {
+      "question": "The cumulative turnover from online gambling in Indonesia over the last five years is estimated to have surpassed...",
+      "options": ["Rp 100 Trillion", "Rp 327 Trillion", "Rp 500 Trillion", "Rp 600 Trillion"],
+      "correctAnswer": "Rp 600 Trillion",
+      "explanation": "The cumulative turnover for the past five years (from 2019 to 2024) is estimated to be over a staggering Rp 600 trillion."
+    },
+    {
+      "question": "Ultimately, eradicating online gambling in Indonesia is not just about consumer protection, but is also a crucial issue of...",
+      "options": ["National and regional security", "International trade policy", "Technological advancement", "Promoting local tourism"],
+      "correctAnswer": "National and regional security",
+      "explanation": "Because online gambling platforms are the public-facing arm of transnational organized crime syndicates involved in human trafficking and money laundering, fighting them is a critical matter of national and regional security."
+    }
+  ]
+}

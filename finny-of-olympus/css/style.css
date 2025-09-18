@@ -1,0 +1,525 @@
+/* General Body and Font Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    /* This will use your background image. If it doesn't load, the color will be a fallback. */
+    background-image: url('../media/images/background.png');
+    background-color: #0b0f22; /* Fallback color */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* This ensures the background stays in place on scroll */
+    color: #f0e6ff;
+    min-height: 100vh; /* Ensures body takes full screen height */
+}
+
+/* Add a class to the body when the menu is open to prevent background scrolling */
+body.menu-is-open {
+    overflow: hidden;
+}
+ .footer-link-animated {
+      position: relative;
+      font-family: 'Baloo 2', cursive;
+      font-weight: 600; /* Semibold */
+      color: rgba(255, 255, 255, 0.7); /* text-white/70 */
+      text-decoration: none;
+      transition: color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+    }
+
+    .footer-link-animated::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -3px;
+      left: 0;
+      background-color: white;
+      transition: width 0.3s ease-in-out;
+    }
+
+    .footer-link-animated:hover {
+      color: white;
+      font-weight: 700; /* Bold */
+    }
+
+    .footer-link-animated:hover::after {
+      width: 100%;
+    }
+.font-cinzel {
+    font-family: 'Cinzel', serif;
+}
+
+/* --- Entry & Intro Animation Styles --- */
+#entry-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10001; /* Highest z-index */
+    background-color: rgba(11, 15, 34, 0.8); /* Semi-transparent background */
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#intro-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    background-color: transparent; /* Make background transparent to see body background */
+    opacity: 1;
+    transition: opacity 1s ease-in-out 1.5s; /* Fade out after 1.5s delay */
+}
+
+#intro-overlay.hidden, #entry-overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#intro-lightning {
+    width: 100%;
+    height: 100%;
+    background-image: url('../media/images/lightning.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0;
+    animation: intro-lightning-strike 1.5s ease-out forwards;
+}
+
+@keyframes intro-lightning-strike {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    40% { opacity: 0.2; }
+    60% { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+/* --- General Animation Styles --- */
+.initially-hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    /* ADJUSTED: Increased duration from 0.5s to 1.2s for a smoother effect */
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Main Container Styles */
+.game-container {
+    background-color: rgba(10, 10, 25, 0.8);
+    border: 2px solid #a48b00;
+    box-shadow: 0 0 40px rgba(255, 223, 0, 0.4);
+    backdrop-filter: blur(8px);
+}
+
+/* Slot Machine Styles */
+.slot-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    background: rgba(0,0,0,0.4);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    border: 2px solid #7b6800;
+    position: relative; /* Needed for the payline indicator */
+}
+
+/* NEW: Payline Indicator */
+.slot-grid::before, .slot-grid::after {
+    content: '';
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    height: 2px;
+    background-color: #ffd700;
+    opacity: 0.5;
+    z-index: 10;
+    pointer-events: none;
+}
+.slot-grid::before {
+    /* Positioned 1/3 down the container height */
+    top: 33.33%;
+}
+.slot-grid::after {
+    /* Positioned 2/3 down the container height */
+    bottom: 33.33%;
+}
+
+
+/* NEW Reel Styles */
+.reel-container {
+    background-color: #1c1948;
+    border: 1px solid #a48b00;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 0.5rem;
+    height: calc( (3.5rem * 1.2) * 3 ); /* Height of 3 symbols */
+    overflow: hidden;
+    position: relative;
+}
+
+.reel-track {
+    display: flex;
+    flex-direction: column;
+    /* This transition creates the smooth stop effect */
+    transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.reel-track.spinning {
+    /* A quick up-and-down motion for the blur effect */
+    animation: blur-spin 0.05s linear infinite;
+}
+
+@keyframes blur-spin {
+    from { transform: translateY(5%); }
+    to { transform: translateY(-5%); }
+}
+
+.reel-symbol {
+    width: 100%;
+    height: calc(3.5rem * 1.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem; /* Responsive font size */
+    color: #e3d9ff;
+    /* FIXED: Set line-height to match the container height for better alignment */
+    line-height: 1.2;
+    flex-shrink: 0;
+}
+
+
+@media (min-width: 640px) {
+    .reel-container {
+         height: calc( (5rem * 1.2) * 3 );
+    }
+    .reel-symbol {
+        height: calc(5rem * 1.2);
+        font-size: 5rem;
+    }
+}
+
+
+/* Button Styles */
+.spin-button {
+    background-color: #ffd700;
+    color: #201e4d;
+    border: 2px solid #c8a400;
+    border-bottom: 5px solid #a48b00;
+    transition: all 0.2s ease;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.2);
+}
+
+.spin-button:hover:not(:disabled) {
+    transform: translateY(-2px);
+    border-bottom: 7px solid #a48b00;
+    filter: brightness(1.1);
+}
+
+.spin-button:active:not(:disabled) {
+    transform: translateY(1px);
+    border-bottom: 5px solid #a48b00;
+}
+
+.spin-button:disabled {
+    background: #555;
+    color: #888;
+    cursor: not-allowed;
+    box-shadow: none;
+    border-bottom: 5px solid #444;
+}
+
+/* Cash Out Button Styles */
+.cashout-button {
+    /* Mengganti warna solid dengan gradien yang lembut */
+    background-image: linear-gradient(to bottom right, #8b5cf6, #6d28d9);
+    color: #f0e6ff;
+    border: 2px solid #5b21b6;
+    border-bottom: 5px solid #4c1d95;
+    transition: all 0.2s ease;
+    box-shadow: 0 5px 15px rgba(109, 40, 217, 0.3);
+}
+.cashout-button:hover:not(:disabled) {
+    transform: translateY(-2px);
+    border-bottom: 7px solid #4c1d95;
+    filter: brightness(1.1);
+}
+.cashout-button:active:not(:disabled) {
+    transform: translateY(1px);
+    border-bottom: 5px solid #4c1d95;
+}
+.cashout-button:disabled {
+    background-image: none; /* Hapus gradien saat disabled */
+    background-color: #555;
+    color: #888;
+    cursor: not-allowed;
+    box-shadow: none;
+    border: 2px solid #444;
+    border-bottom: 5px solid #333;
+}
+
+
+/* UI Box Styles */
+.stat-box {
+    background-color: rgba(0,0,0,0.3);
+    border: 1px solid #7b6800;
+}
+.payouts-box {
+    background-color: rgba(0,0,0,0.4);
+    border: 1px solid #7b6800;
+}
+.message-box {
+    background-color: rgba(0,0,0,0.5);
+    border: 1px solid #c8a400;
+    transition: background-color 0.5s ease-in-out;
+}
+
+/* Payouts Info Styles */
+/* REVISED: Changed justify-content and added gap */
+#payouts-info div {
+    display: flex;
+    justify-content: space-between; /* Changed from 'center' */
+    padding: 0.25rem 2rem; /* Added horizontal padding */
+}
+
+#payouts-info span:first-child {
+    font-size: 1.5rem; /* Larger emoji */
+}
+
+/* Animation and Messaging Styles */
+
+/* REVISED: Rules for the message box */
+#win-lose-message {
+    min-height: 5rem; /* Ensures space is reserved. Adjust as needed. */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.3;
+}
+
+.win-message {
+    animation: win-pulse 1s ease-out;
+}
+
+/* NEW: LDW Indicator Style */
+.ldw-indicator {
+    font-size: 0.875rem; /* text-sm */
+    display: block;
+    margin-top: 0.25rem;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes win-pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* NEW: House Earnings Ping Animation */
+@keyframes ping-once {
+  0% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(239, 68, 68, 0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#house-earnings.animate-ping-once {
+  animation: ping-once 1s cubic-bezier(0, 0, 0.2, 1);
+}
+
+/* Odds Display Phase Styles */
+.odds-display-hook, .message-hook { background-color: rgba(0, 255, 127, 0.2); border-color: springgreen; }
+.odds-display-transition, .message-transition { background-color: rgba(255, 165, 0, 0.2); border-color: orange; }
+.odds-display-house, .message-house { background-color: rgba(255, 69, 0, 0.2); border-color: orangered; }
+
+/* Modal Styles */
+.modal {
+    transition: opacity 0.25s ease;
+}
+
+.modal-content {
+    background: linear-gradient(135deg, #2a265f 0%, #1c1948 100%);
+    transform: scale(0.95);
+    transition: transform 0.25s ease;
+    animation: zoomIn 0.3s ease-out forwards;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Chart Container in Modal */
+.chart-container {
+    position: relative;
+    height: 250px; /* Adjust as needed */
+    width: 100%;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+/* This class will be toggled by JS to show the menu */
+#menu.is-open {
+    transform: translateX(0);
+}
+
+/* Quiz Page Styles */
+.quiz-option {
+    border: 2px solid #a48b00;
+    transition: background-color 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.quiz-option:not(:disabled):hover {
+    background-color: rgba(255, 215, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.quiz-option.correct {
+    background-color: rgba(74, 222, 128, 0.3); /* Green for correct */
+    border-color: #4ade80;
+}
+
+.quiz-option.incorrect {
+    background-color: rgba(248, 113, 113, 0.3); /* Red for incorrect */
+    border-color: #f87171;
+}
+
+.quiz-option:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.explanation-box {
+    background-color: rgba(0,0,0,0.3);
+    border-left: 4px solid #ffd700;
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Learning Page Accordion Styles */
+.accordion-item {
+    background-color: rgba(0,0,0,0.3);
+    border: 1px solid #7b6800;
+    border-radius: 0.5rem;
+    overflow: hidden; /* Important for the max-height transition */
+}
+
+.accordion-header {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-family: 'Cinzel', serif;
+    color: #f0e6ff;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover, .accordion-header.active {
+    background-color: rgba(255, 215, 0, 0.1);
+}
+
+.accordion-icon {
+    font-size: 1.5rem;
+    color: #ffd700;
+    transition: transform 0.3s ease;
+}
+
+.accordion-header.active .accordion-icon {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    max-height: 0; /* Initially hidden */
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.accordion-content p {
+    padding: 1.5rem;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+/* Updated Lightning Win Animation */
+#lightning-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../media/images/lightning.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0;
+}
+
+#lightning-overlay.active {
+    /* The new animation combining blinking and the image */
+    animation: lightning-blink-image 0.8s ease-out;
+}
+
+@keyframes lightning-blink-image {
+    0% { opacity: 0; }
+    5% { opacity: 0.8; }
+    10% { opacity: 0.2; }
+    15% { opacity: 1; }
+    85% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* --- MOBILE RESPONSIVE STYLES --- */
+@media (max-width: 640px) {
+    /* Make Spin and Cash Out buttons smaller on mobile */
+    #spin-button, #cashout-button {
+        padding-top: 0.75rem;      /* 12px */
+        padding-bottom: 0.75rem;   /* 12px */
+        font-size: 1rem;           /* 16px, reduced for more space */
+    }
+
+    /* Adjust win/lose message to prevent overlap on mobile */
+    #win-lose-message {
+        font-size: 1.125rem; /* 18px, reduced from 3xl */
+        /* REVISED: Remove fixed height, it is now in the main rule */
+        margin-bottom: 1rem; /* Ensure space between message and buttons */
+    }
+    
+}
